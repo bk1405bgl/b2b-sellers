@@ -1,5 +1,5 @@
 <h1>{{$heading}}</h1>
 @foreach($listings as $listing)
-<h2>{{$listing['title']}}</h2>
+<h3>{{$listing['title']}}</h3>
 <p>{{$listing['description']}}</p>
 @endforeach
