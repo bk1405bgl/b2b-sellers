@@ -11,7 +11,7 @@
             B2B<span class="text-black">SELLERS</span>
         </h1>
         <p class="text-2xl text-gray-200 font-bold my-4">
-            Finde das B2B Partnerunternehmen für neue Geschäftsfelder
+            Finden Sie das B2B Partnerunternehmen für neue Geschäftsfelder
         </p>
         <div>
             <a
