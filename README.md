@@ -7,7 +7,7 @@ Little App, to add B2B-sellers and display them to other B2B-sellers, so they ca
 - [] Routing to details page of one selected listing "/listings/n" (later combined with Controller)
 
 ## Components
-- [] one component to oursource repeating code (cards of the listings on "/") 
+- [] one component to outsource repeating code (cards of the listings on "/") 
 - [] another component to outsource repeating code (tags of the listings on "/" & "/listings/n")
 
 ## Maria-DB (MySQL) database
