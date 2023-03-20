@@ -54,7 +54,7 @@
     <p class="ml-2">&copy; <?php echo date("Y") ?> BK</p>
 
     <a
-        href="create.html"
+        href="/listings/create"
         class="absolute top-1/3 right-10 bg-black text-white py-2 px-5"
     >Unternehmen hinzufügen</a
     >

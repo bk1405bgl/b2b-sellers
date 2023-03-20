@@ -22,3 +22,7 @@ Little App, to add B2B-sellers and display them to other B2B-sellers, so they ca
 - [] app/Http/Controllers/ListingController.php
 - [] Created Controller class and now have less Code in resources/routes/web.php to show the index page with all listings "/"
 - [] Created Controller class and now have less Code in resources/routes/web.php to show the details page with one selected listing "/listings/n"
+
+## CSS & Template
+- [] CSS with Tailwind.
+- [] Template existed already. Made little customizations.
