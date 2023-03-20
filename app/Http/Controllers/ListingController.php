@@ -10,21 +10,15 @@ class ListingController extends Controller
     // All Listings
     public function index() {
         return view('listings.index', [
-            'listings' => Listing::latest()->get()
+            'listings' => Listing::latest()->filter(request(['tag', 'search']))->get()
         ]);
     }
 
     // Single Listing
     public function show(Listing $listing) {
-        $listing = Listing::find($id);
-
-        if($listing) {
-            return view('listings.show', [
+        return view('listings.show', [
                 'listing' => $listing
             ]);
-        } else {
-            abort('404');
-        }
 
     }
 }

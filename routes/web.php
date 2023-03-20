@@ -19,4 +19,4 @@ use App\Models\Listing;
 Route::get('/', [\App\Http\Controllers\ListingController::class, 'index']);
 
 // Single listing
-Route::get('/listings/{id}', [\App\Http\Controllers\ListingController::class, 'show']);
+Route::get('/listings/{listing}', [\App\Http\Controllers\ListingController::class, 'show']);
