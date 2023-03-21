@@ -30,5 +30,8 @@ Route::get('/listings/{listing}/edit', [\App\Http\Controllers\ListingController:
 // Send updated data in form to DB
 Route::put('/listings/{listing}', [\App\Http\Controllers\ListingController::class, 'update']);
 
+// Delete Listing
+Route::delete('/listings/{listing}', [\App\Http\Controllers\ListingController::class, 'destroy']);
+
 // Single listing
 Route::get('/listings/{listing}', [\App\Http\Controllers\ListingController::class, 'show']);
