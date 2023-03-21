@@ -44,5 +44,10 @@
                 </div>
             </div>
         </x-card>
+
+        <x-card class="mt-4 p-2 flex space-x-6">
+            <a href="/listings/{{$listing->id}}/edit"><i class="fa-solid fa-pencil"> Bearbeiten</i></a>
+        </x-card>
+
     </div>
 </x-layout>
