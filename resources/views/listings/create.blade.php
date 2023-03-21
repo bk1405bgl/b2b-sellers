@@ -9,7 +9,7 @@
             @csrf
             <div class="mb-6">
                 <label for="company" class="inline-block text-lg mb-2">Name des Unternehmens</label>
-                <input type="text" class="border border-gray-200 rounded p-2 w-full" name="company" placeholder="Beispiel: B2Bsellers GmbH" />
+                <input type="text" class="border border-gray-200 rounded p-2 w-full" name="company" value="{{old('company')}}" placeholder="Beispiel: B2Bsellers GmbH" />
                 @error('company')
                     <p class="text-red-500 text-xs mt-1">{{$message}}</p>
                 @enderror
@@ -17,7 +17,7 @@
 
             <div class="mb-6">
                 <label for="title" class="inline-block text-lg mb-2">Geschäftsführer</label>
-                <input type="text" class="border border-gray-200 rounded p-2 w-full" name="title" placeholder="Beispiel: Max Mustermann" />
+                <input type="text" class="border border-gray-200 rounded p-2 w-full" name="title" value="{{old('title')}}" placeholder="Beispiel: Max Mustermann" />
                 @error('title')
                     <p class="text-red-500 text-xs mt-1">{{$message}}</p>
                 @enderror
@@ -25,7 +25,7 @@
 
             <div class="mb-6">
                 <label for="location" class="inline-block text-lg mb-2">Standort</label>
-                <input type="text" class="border border-gray-200 rounded p-2 w-full" name="location" placeholder="Beispiel: Esslingen am Neckar" />
+                <input type="text" class="border border-gray-200 rounded p-2 w-full" name="location" value="{{old('location')}}" placeholder="Beispiel: Esslingen am Neckar" />
                 @error('location')
                     <p class="text-red-500 text-xs mt-1">{{$message}}</p>
                 @enderror
@@ -33,7 +33,7 @@
 
             <div class="mb-6">
                 <label for="email" class="inline-block text-lg mb-2">Email Adresse</label>
-                <input type="text" class="border border-gray-200 rounded p-2 w-full" name="email" />
+                <input type="text" class="border border-gray-200 rounded p-2 w-full" name="email" value="{{old('email')}}" />
                 @error('email')
                     <p class="text-red-500 text-xs mt-1">{{$message}}</p>
                 @enderror
@@ -41,7 +41,7 @@
 
             <div class="mb-6">
                 <label for="website" class="inline-block text-lg mb-2">Website URL</label>
-                <input type="text" class="border border-gray-200 rounded p-2 w-full" name="website" />
+                <input type="text" class="border border-gray-200 rounded p-2 w-full" name="website" value="{{old('website')}}" />
                 @error('website')
                     <p class="text-red-500 text-xs mt-1">{{$message}}</p>
                 @enderror
@@ -49,7 +49,7 @@
 
             <div class="mb-6">
                 <label for="tags" class="inline-block text-lg mb-2">Geschäfsfelder (kommagetrennt)</label>
-                <input type="text" class="border border-gray-200 rounded p-2 w-full" name="tags" placeholder="Beispiel: Automobile, Elektronik, Chemie, ..." />
+                <input type="text" class="border border-gray-200 rounded p-2 w-full" name="tags" value="{{old('tags')}}" placeholder="Beispiel: Automobile, Elektronik, Chemie, ..." />
                 @error('tags')
                     <p class="text-red-500 text-xs mt-1">{{$message}}</p>
                 @enderror
@@ -65,7 +65,7 @@
 
             <div class="mb-6">
                 <label for="description" class="inline-block text-lg mb-2">Unternehmensbeschreibung</label>
-                <textarea class="border border-gray-200 rounded p-2 w-full" name="description" rows="10"></textarea>
+                <textarea class="border border-gray-200 rounded p-2 w-full" name="description" value="{{old('description')}}" rows="10" ></textarea>
                 @error('description')
                     <p class="text-red-500 text-xs mt-1">{{$message}}</p>
                 @enderror
